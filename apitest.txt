@@ -1,0 +1,17 @@
+POST http://localhost:5000/api/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "ono2", 
+    "email": "onopod2@gmail.com",
+    "password": "Passwd12"
+}
+
+###
+POST http://localhost:5000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "onopod@gmail.com",
+    "password": "Passwd12"
+}
