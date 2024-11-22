@@ -30,14 +30,7 @@ router.post("/post", async (req, res) => {
             "message": "サーバーエラーです。"
         })
     }
-    const user = await prisma.user.create({
-        data: {
-            username,
-            email,
-            password: hashedPassword
-        }
-    })
-    return res.json({ user });
+
 });
 
 module.exports = router;
