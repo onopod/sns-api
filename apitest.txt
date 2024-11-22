@@ -15,3 +15,11 @@ content-type: application/json
     "email": "onopod@gmail.com",
     "password": "Passwd12"
 }
+
+###
+POST http://localhost:5000/api/posts/post HTTP/1.1
+content-type: application/json
+
+{
+    "content": "this is test."
+}
